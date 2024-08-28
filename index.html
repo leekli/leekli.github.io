@@ -87,6 +87,20 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       }
 
+      #header {
+        display: flex;
+        align-items: center; /* Vertically center-aligns the image and the text */
+      }
+
+      #mewtwo-image {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
       @media (max-width: 375px) {
         pre {
           margin: 0px;
@@ -125,7 +139,12 @@
     </style>
   </head>
   <body>
-    <div>
+    <div id="header">
+      <img
+        src="assets/m2jpg.jpg"
+        alt="a small circular image of the Mewtwo character from pokemon looking at the camera with their arm out"
+        id="mewtwo-image"
+      />
       <h1 style="color: white">李 li [lee]</h1>
     </div>
 
